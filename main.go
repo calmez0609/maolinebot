@@ -42,7 +42,6 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 		if event.Type == linebot.EventTypeMessage {
 			switch message := event.Message.(type) {
 			case *linebot.TextMessage:
-				quota, err := bot.GetMessageQuota().Do()
 				RandomMessage(message.Text)
 				if err != nil {
 					log.Println("Quota err:", err)
