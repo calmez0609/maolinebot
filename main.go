@@ -28,9 +28,9 @@ func main() {
 	http.ListenAndServe(addr, nil)
 }
 func RandomMessage(MessageText string){
- if MessageText:="你好"{
+ if MessageText=="你好"{
    Reply:="好三小"
-   } else if MessageText:="Random"{ 
+   } else if MessageText=="Random"{ 
 	rand.Seed(time.Now().UnixNano())
 	Random:=rand.Intn(3)
     Reply:=names[Random]
