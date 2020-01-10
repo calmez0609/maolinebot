@@ -29,14 +29,12 @@ func main() {
 func RandomMessage(MessageText string){
  if MessageText=="你好"{
    Reply:="好三小"
-   }
-   else if MessageText=="Random"{ 
+   }else if MessageText=="Random"{ 
 	length := len(names)
 	   Reply:=names[generator.rand.Intn(length)]
    }else{
 	   Reply:=""
    }
-    
 }
 func callbackHandler(w http.ResponseWriter, r *http.Request) {
 	events, err := bot.ParseRequest(r)
