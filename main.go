@@ -5,7 +5,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"strconv"
         "math/rand"
         "time"
 	"github.com/line/line-bot-sdk-go/linebot"
