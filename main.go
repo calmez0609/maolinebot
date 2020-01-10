@@ -6,7 +6,8 @@ import (
 	"net/http"
 	"os"
 	"strconv"
-	"random"
+        "math/rand"
+        "time"
 	"github.com/line/line-bot-sdk-go/linebot"
 )
 
@@ -37,17 +38,6 @@ func RandomMessage(MessageText string){
 	   Reply:=""
    }
 }
-func Shuffle(vals []string) []string {
-	r := rand.New(rand.NewSource(time.Now().Unix()))
-	ret := make([]string, len(vals))
-	n := len(vals)
-	for i := 0; i < n; i++ {
-	  randIndex := r.Intn(len(vals))
-	  ret[i] = vals[randIndex]
-	  vals = append(vals[:randIndex], vals[randIndex+1:]...)
-	}
-	return ret
-  }
 func callbackHandler(w http.ResponseWriter, r *http.Request) {
 	events, err := bot.ParseRequest(r)
 
