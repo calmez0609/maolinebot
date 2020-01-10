@@ -5,13 +5,18 @@ import (
 	"log"
 	"net/http"
 	"os"
-	
-
+	"strconv"
+	"math/rand"
 	"github.com/line/line-bot-sdk-go/linebot"
 )
 
 var bot *linebot.Client
 var  Reply string
+var names = []string{
+	"三山國王",
+	"耶穌",
+	"佛祖",
+}
 func main() {
 	var err error
 	bot, err = linebot.New(os.Getenv("ChannelSecret"), os.Getenv("ChannelAccessToken"))
@@ -21,10 +26,18 @@ func main() {
 	addr := fmt.Sprintf(":%s", port)
 	http.ListenAndServe(addr, nil)
 }
-func RandomMessage(MessageText string){
-   if MessageText=="你好"{
-   Reply="好三小" 
-}
+func RandomMessage(MessageText string)
+{
+ if MessageText:="你好"{
+   Reply:="好三小"
+   }
+   else if MessageText:="Random"{ 
+	length := len(names)
+	   Reply:=names[generator.rand.Intn(length)]
+   }else{
+	   Reply:=""
+   }
+    
 }
 func callbackHandler(w http.ResponseWriter, r *http.Request) {
 	events, err := bot.ParseRequest(r)
