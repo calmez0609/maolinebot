@@ -22,8 +22,8 @@ func main() {
 	http.ListenAndServe(addr, nil)
 }
 func RandomMessage(MessageText string){
-   if MessageText:="你好"
-   Reply:="好三小" 
+   if MessageText="你好"
+   Reply="好三小" 
 }
 func callbackHandler(w http.ResponseWriter, r *http.Request) {
 	events, err := bot.ParseRequest(r)
