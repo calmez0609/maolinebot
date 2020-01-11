@@ -28,13 +28,13 @@ func main() {
 }
 func RandomMessage(MessageText string){
  if MessageText=="你好"{
-   Reply="好三小"
+   Reply="你好我可以為您提供服務"
    } else if MessageText=="Random"{ 
 	rand.Seed(time.Now().UnixNano())
 	Random:=rand.Intn(3)
     Reply=names[Random]
    }else{
-	   Reply=""
+	   Reply="不懂"+MessageText+"的意思"
    }
 }
 func callbackHandler(w http.ResponseWriter, r *http.Request) {
