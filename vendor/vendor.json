@@ -19,13 +19,8 @@
 			"path": "golang.org/x/net/context/ctxhttp",
 			"revision": "9ef22118a4b25863aa94546daffbc0a18feaafb3",
 			"revisionTime": "2016-11-09T21:27:32Z"
-		},
-		{
-			"checksumSHA1": "WHc3uByvGaMcnSoI21fhzYgbOqg=",
-			"path": "github.com/lib/pq",
-			"revision": "0a2ee140448a6c98e3972826b7681e5050013484",
-			"revisionTime": "2019-04-23T06:20:25Z"
 		}
+		
 	],
 	"rootPath": "https://github.com/calmez0609/maolinebot"
 }
