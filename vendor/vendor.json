@@ -22,7 +22,7 @@
 		},
 		{
 			"checksumSHA1": "WHc3uByvGaMcnSoI21fhzYgbOgg=",
-			"path": "golang.com/lib/pq",
+			"path": "github.com/lib/pq",
 			"revision": "9ef22118a4b25863aa94546daffbc0a18feaafb3",
 			"revisionTime": "2016-11-09T21:27:32Z"
 		}
